@@ -12,4 +12,8 @@
 }
 section {
     padding-top: 7rem;
+    padding-bottom: 5rem;
+}
+p {
+    text-align: justify;
 }
