@@ -4,6 +4,9 @@
 #about {
     background-color: #ffecec;
 }
+#about p {
+    text-align: justify;
+}
 #projects {
     background-color: #ffcccd;
 }
@@ -12,8 +15,4 @@
 }
 section {
     padding-top: 7rem;
-    padding-bottom: 5rem;
-}
-p {
-    text-align: justify;
 }
