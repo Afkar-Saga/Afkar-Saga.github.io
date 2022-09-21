@@ -198,7 +198,7 @@
                 .then((response) => {
                     btnLoading.classList.toggle('d-none');
                     btnKirim.classList.toggle('d-none');
-                    myAlert.classList.toggle('d-none');
+                    myAlert.classList.remove('d-none');
                     form.reset();
                     console.log('Success!', response);
                 })
