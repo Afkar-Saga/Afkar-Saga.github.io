@@ -156,7 +156,7 @@
                             Loading...
                         </button>
                     </form>
-                    <div class="alert alert-info fade mt-3 my-alert" role="alert">
+                    <div id="my-alert" class="alert alert-info fade mt-3" role="alert">
                         <strong>Good job!</strong> Your message has been sent.
                         <button type="button" class="btn-close" onclick="tutupAlert()" aria-label="Close"></button>
                     </div>
@@ -188,7 +188,7 @@
         const form = document.forms['afkar-contact-form'];
         const btnKirim = document.querySelector('.btn-kirim');
         const btnLoading = document.querySelector('.btn-loading');
-        const myAlert = document.querySelector('.my-alert');
+        const myAlert = document.getElementById('my-alert');
         myAlert.style.visibility = 'hidden';
         const tutupAlert = () => {
             myAlert.style.visibility = 'hidden'
