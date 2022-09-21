@@ -156,9 +156,9 @@
                             Loading...
                         </button>
                     </form>
-                    <div class="alert alert-primary alert-dismissible fade show mt-3 d-none my-alert" role="alert">
+                    <div class="alert alert-info fade mt-3 my-alert" role="alert">
                         <strong>Good job!</strong> Your message has been sent.
-                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        <button type="button" class="btn-close" onclick="tutupAlert()" aria-label="Close"></button>
                     </div>
                 </div>
             </div>
@@ -189,7 +189,11 @@
         const btnKirim = document.querySelector('.btn-kirim');
         const btnLoading = document.querySelector('.btn-loading');
         const myAlert = document.querySelector('.my-alert');
-        
+        myAlert.style.visibility = 'hidden';
+        const tutupAlert = () => {
+            myAlert.style.visibility = 'hidden'
+        }
+
         form.addEventListener('submit', e => {
             e.preventDefault();
             btnLoading.classList.toggle('d-none');
@@ -198,12 +202,13 @@
                 .then((response) => {
                     btnLoading.classList.toggle('d-none');
                     btnKirim.classList.toggle('d-none');
-                    myAlert.classList.remove('d-none');
+                    myAlert.style.visibility = 'visible';
                     form.reset();
                     console.log('Success!', response);
                 })
                 .catch((error) => console.error('Error!', error.message));
         });
+        
     </script>
 </body>
 
