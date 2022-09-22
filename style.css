@@ -1,9 +1,13 @@
 html, body {
+    font-family: cursive;
     overflow-x: hidden;
     width: 100vw;
 }
 .jumbotron {
     background-color: #ffcccd;
+}
+#jumbotron p {
+    font-family: monospace;
 }
 #about {
     background-color: #ffecec;
