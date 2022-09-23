@@ -1,13 +1,13 @@
-html, body {
-    font-family: cursive;
+body {
+    font-family: 'Comic Sans MS', sans-serif;
     overflow-x: hidden;
     width: 100vw;
 }
 .jumbotron {
     background-color: #ffcccd;
 }
-#jumbotron p {
-    font-family: monospace;
+.lead {
+    font-family: 'Courier New', Courier, monospace;
 }
 #about {
     background-color: #ffecec;
