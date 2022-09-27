@@ -98,25 +98,34 @@
                 </div>
             </div>
             <div class="row justify-content-center">
-                <div class="col-md-4 mb-3">
-                    <div class="card" data-aos="flip-right" data-aos-duration="1500" data-aos-easing="ease-out-quart">
-                        <img src="img/project-pokemon-fly.png" class="card-img-top" alt="Project Pokemon Fly">
+                <div class="col-md-3 mb-3">
+                    <div class="card" data-aos="flip-right" data-aos-easing="ease-out-quart">
+                        <img src="img/project-pokemon-fly.png" class="card-img-top" alt="Pokemon Fly">
                         <div class="card-body">
-                            <h4><a href="https://www.khanacademy.org/computer-programming/pokemon-fly-11/5432642201026560" class="link-danger">Project Pokemon Fly</a></h4>
+                            <h4><a href="https://www.khanacademy.org/computer-programming/pokemon-fly-11/5432642201026560" class="link-danger">Pokemon Fly</a></h4>
                             <p class="card-text">This is the first ever game i made in a website called
                                 KhanAcedemy using ProcessingJS. <br>It's a <em>dodge</em> game using Pokemon as the
                                 characters</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-3">
-                    <div class="card" data-aos="flip-right" data-aos-duration="1500" data-aos-delay="300" data-aos-easing="ease-out-quart">
-                        <img src="img/project-blog.png" class="card-img-top" alt="Project Blog">
+                <div class="col-md-3 mb-3">
+                    <div class="card" data-aos="flip-right" data-aos-delay="300" data-aos-easing="ease-out-quart">
+                        <img src="img/project-blog.png" class="card-img-top" alt="Blog">
                         <div class="card-body">
-                            <h4><a href="https://afkar-saga.github.io/my-blog/" class="link-danger">Project Blog</a></h4>
+                            <h4><a href="https://afkar-saga.github.io/my-blog/" class="link-danger">Blog</a></h4>
                             <p class="card-text">I made a blog about how i started coding and about
                                 the game i made. <br>It's... <em>colorful</em>! Yeah, definitely won't hurt your eyes
                             </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <div class="card" data-aos="flip-right" data-aos-delay="600" data-aos-easing="ease-out-quart">
+                        <img src="img/project-game-center.png" class="card-img-top" alt="Game Center">
+                        <div class="card-body">
+                            <h4><a href="https://afkar-saga.github.io/game-center/" class="link-danger">Game Center</a></h4>
+                            <p class="card-text">My website for any games that I made using JavaScript</p>
                         </div>
                     </div>
                 </div>
@@ -132,7 +141,7 @@
 
     <!-- Contact -->
     <section id="contact">
-        <div class="container" data-aos="zoom-in-up" data-aos-duration="2000" data-aos-easing="ease-in-out-quart">
+        <div class="container" data-aos="zoom-in-up" data-aos-duration="1500" data-aos-easing="ease-in-quart">
             <div class="row text-center mb-4">
                 <div class="col">
                     <h2>Contact Me</h2>
@@ -176,8 +185,25 @@
 
     <!-- Footer -->
     <footer class="bg-danger text-white text-center pb-5">
-        <p>Created with <i class="bi bi-heart-fill text-success"></i> by <a href="https://github.com/Afkar-Saga" class="text-white fw-bold">Afkar Sukmawan
-                Ahmad</a></p>
+        <div class="container">
+            <div class="row mb-4 justify-content-center">
+                <div class="col-md-2">
+                    <a href="https://www.twitter.com/AfkarSaga" class="text-decoration-none text-light" target="_blank"><i class="bi bi-twitter fst-normal"></i>AfkarSaga</a>
+                </div>
+                <div class="col-md-2">
+                    <a href="https://www.instagram.com/afkar_saga" class="text-decoration-none text-light" target="_blank"><i class="bi bi-instagram fst-normal"></i>afkar_saga</a>
+                </div>
+                <div class="col-md-2">
+                    <a href="https://www.github.com/Afkar-Saga" class="text-decoration-none text-light" target="_blank"><i class="bi bi-github fst-normal"></i>Afkar-Saga</a>
+                </div>
+                <div class="col-md-2">
+                    <a href="https://www.facebook.com/afkar.saga" class="text-decoration-none text-light" target="_blank"><i class="bi bi-facebook fst-normal"></i>afkar.saga</a>
+                </div>
+            </div>
+            <div class="row">
+                <p>Created with <i class="bi bi-heart-fill text-success"></i> by Afkar Sukmawan Ahmad</p>
+            </div>
+        </div>
     </footer>
     <!-- Akhir Footer -->
 
@@ -202,7 +228,7 @@
     <script>
         gsap.from(".navbar", {duration: 2, y: -75, ease: "bounce"});
         gsap.from(".img-thumbnail", {duration: 1.5, delay: 1, width: 0, opacity: 0, rotationY: 720});
-        gsap.from(".display-4", {duration: 1, delay:2, opacity: 0, x: 800, ease: "back"})
+        gsap.from(".display-4", {duration: 1, delay:2, opacity: 0, x: -1000, ease: "back"})
         gsap.to(".lead", {duration: 2, delay: 3, text: "Student | Programmer"});
     </script>
 
