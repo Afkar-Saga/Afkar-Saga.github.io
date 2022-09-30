@@ -96,5 +96,5 @@ section {
     z-index: 2;
 }
 .character-box:hover .character-img {
-    transform: translate3d(-50%, -48%, 100px) scale(1.3);
+    transform: translate3d(-50%, -52%, 100px) rotate(180deg) scale(-1.2);
 }
