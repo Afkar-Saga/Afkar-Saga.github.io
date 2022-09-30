@@ -30,3 +30,71 @@ body {
 section {
     padding-top: 7rem;
 }
+.character-box {
+    background-color: #dc3545;
+    position: relative;
+    border-radius: 10px;
+    height: 80vh;
+    transform-style: preserve-3d;
+}
+.character-box::before {
+    content: 'MY';
+    position: absolute;
+    color: #fff;
+    font-size: 3em;
+    font-weight: bold;
+    font-style: italic;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    opacity: 0;
+    transition: 0.5s;
+}
+.character-box:hover::before {
+    opacity: 50%;
+    left: 50%;
+}
+.character-box::after {
+    content: 'CHARACTER';
+    position: absolute;
+    color: #fff;
+    font-size: 3em;
+    font-weight: bold;
+    font-style: italic;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    opacity: 0;
+    transition: 0.5s;
+}
+.character-box:hover::after {
+    opacity: 50%;
+    left: 50%;
+}
+.character-name {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    font-size: 2em;
+    opacity: 0;
+    transform: translate3d(0, 0, 50px);
+    transition: 0.5s;
+}
+.character-box:hover .character-name {
+    top: 20px;
+    opacity: 100%;
+}
+.character-img {
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    transform: translate3d(-50%, -52%, 80px);
+    max-width: 350px;
+    transition: 0.5s;
+    z-index: 2;
+}
+.character-box:hover .character-img {
+    transform: translate3d(-50%, -48%, 100px) scale(1.3);
+}
