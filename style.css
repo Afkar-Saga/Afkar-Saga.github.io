@@ -2,15 +2,20 @@
     font-family: 'Comic Sans MS';
     src: url('font/comic-sans-ms/COMIC.TTF');
 }
+
 html, body {
     overflow-x: hidden;
     width: 100vw;
 }
 body {
-    font-family: 'Comic Sans MS', sans-serif;
+    font-family: 'Patrick Hand', cursive;
 }
+
 .jumbotron {
     background-color: #ffcccd;
+}
+.jumbotron h1 {
+    font-family: 'Comic Sans MS', sans-serif;
 }
 .lead {
     font-family: 'Courier New', Courier, monospace;
@@ -30,6 +35,7 @@ body {
 section {
     padding-top: 7rem;
 }
+
 .character-box {
     background-color: #dc3545;
     position: relative;
